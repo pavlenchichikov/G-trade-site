@@ -1,6 +1,6 @@
-# G-Trade Landing
+# Atratus Landing
 
-A bilingual (RU / EN) one-page landing site for **G-Trade**, a multi-asset
+A bilingual (RU / EN) one-page landing site for **Atratus**, a multi-asset
 machine-learning trading-signal engine. Built as a portfolio piece and the
 project's public page.
 
@@ -54,5 +54,5 @@ src/
 public/              banner + product screenshots
 ```
 
-Copy is drawn from the G-Trade README so the site stays consistent with the
+Copy is drawn from the Atratus README so the site stays consistent with the
 repository.

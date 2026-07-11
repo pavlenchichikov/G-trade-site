@@ -14,7 +14,7 @@ export const en: Strings = {
     badge: "Signals only. Human-in-the-loop.",
     tagline: "Multi-asset machine-learning trading-signal engine",
     summary:
-      "G-Trade trains a dedicated ensemble - CatBoost, LSTM, Transformer and TCN - for each of ~181 markets across crypto, US, European and Russian equities, indices, forex and commodities. A walk-forward backtest with commissions, slippage and a leakage embargo picks the champion; its probabilities are calibrated against realized moves, sized by Kelly, and gated by a Taleb tail-risk index. A FastAPI dashboard reads the results instantly, and an autonomous, statistically-gated research agent keeps looking for genuine edge - without ever touching production on its own.",
+      "Atratus trains a dedicated ensemble - CatBoost, LSTM, Transformer and TCN - for each of ~181 markets across crypto, US, European and Russian equities, indices, forex and commodities. A walk-forward backtest with commissions, slippage and a leakage embargo picks the champion; its probabilities are calibrated against realized moves, sized by Kelly, and gated by a Taleb tail-risk index. A FastAPI dashboard reads the results instantly, and an autonomous, statistically-gated research agent keeps looking for genuine edge - without ever touching production on its own.",
     highlights: [
       "Calibrated probabilities",
       "Walk-forward selection",
@@ -99,7 +99,7 @@ export const en: Strings = {
     kicker: "Always improving",
     heading: "Autonomous research agent",
     sub: "It looks for edge on its own - and proves it before believing it.",
-    lead: "Most of the pipeline is fixed once trained. The research agent is where G-Trade keeps improving: a quality-diversity search that illuminates the space of features, labels and transforms, remembers every experiment across runs, and holds each candidate to a strict statistical bar before it counts as a finding.",
+    lead: "Most of the pipeline is fixed once trained. The research agent is where Atratus keeps improving: a quality-diversity search that illuminates the space of features, labels and transforms, remembers every experiment across runs, and holds each candidate to a strict statistical bar before it counts as a finding.",
     points: [
       {
         title: "MAP-Elites search",
@@ -168,7 +168,7 @@ export const en: Strings = {
   footer: {
     disclaimerTitle: "Disclaimer",
     disclaimer:
-      "G-Trade is a research and educational project. Its output is a set of model predictions, not financial advice and not a recommendation to buy or sell any security. Markets carry risk and you can lose money. The software is provided as is, without warranty of any kind.",
+      "Atratus is a research and educational project. Its output is a set of model predictions, not financial advice and not a recommendation to buy or sell any security. Markets carry risk and you can lose money. The software is provided as is, without warranty of any kind.",
     license: "Licensed under CC BY-NC 4.0 (non-commercial).",
     repo: "Source on GitHub",
     contact: "Contact",
