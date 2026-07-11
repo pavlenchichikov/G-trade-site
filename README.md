@@ -4,7 +4,7 @@ A bilingual (RU / EN) one-page landing site for **Atratus**, a multi-asset
 machine-learning trading-signal engine. Built as a portfolio piece and the
 project's public page.
 
-- Repo it showcases: https://github.com/pavlenchichikov/G-Trade
+- Repo it showcases: https://github.com/pavlenchichikov/Atratus
 
 ## Stack
 

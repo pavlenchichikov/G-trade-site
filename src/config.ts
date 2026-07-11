@@ -1,5 +1,5 @@
 export const LINKS = {
-  repo: "https://github.com/pavlenchichikov/G-Trade",
+  repo: "https://github.com/pavlenchichikov/Atratus",
   github: "https://github.com/pavlenchichikov",
   email: "p.galashin@proton.me",
 };
