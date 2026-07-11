@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0a0e12;
+  --color-panel: #11161c;
+  --color-panel2: #0e1319;
+  --color-line: #1c2530;
+  --color-neon: #2de3a0;
+  --color-neon-soft: #1b8f66;
+  --color-danger: #ff4d5e;
+  --color-ink-text: #d7dee7;
+  --color-muted: #8a97a6;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, "Cascadia Code", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-ink);
+  color: var(--color-ink-text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Neon accents */
+.glow {
+  text-shadow: 0 0 18px rgba(45, 227, 160, 0.45);
+}
+
+.panel {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-line);
+}
+
+.grid-bg {
+  background-image:
+    radial-gradient(circle at 50% 0%, rgba(45, 227, 160, 0.08), transparent 60%),
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 100% 100%, 44px 44px, 44px 44px;
+  background-position: center top;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(45, 227, 160, 0.5);
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 4px rgba(45, 227, 160, 0);
+  }
+}
+
+.dot-pulse {
+  animation: pulseDot 2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
