@@ -9,7 +9,16 @@ export const isSupabaseConfigured = Boolean(url && anon);
 
 export const supabase: SupabaseClient | null = isSupabaseConfigured
   ? createClient(url as string, anon as string, {
-      auth: { persistSession: true, autoRefreshToken: true },
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        // Implicit flow puts the tokens in the link's URL hash, so the magic
+        // link works in ANY browser/device (e.g. opened from a phone's email
+        // app), not only the browser that started the sign-in. PKCE (the
+        // default) breaks when the link opens in a different browser.
+        flowType: "implicit",
+      },
     })
   : null;
 

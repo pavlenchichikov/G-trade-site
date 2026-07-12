@@ -19,5 +19,6 @@ npm-debug.log*
 # TS build info
 *.tsbuildinfo
 
-#env
-*.env
+# Local-only env overrides (the committed .env carries the PUBLIC Supabase URL +
+# anon key, which the build needs; secrets never live in this repo).
+.env.local
