@@ -5,8 +5,10 @@ import { Features } from "./components/Features";
 import { HowItWorks } from "./components/HowItWorks";
 import { Research } from "./components/Research";
 import { Universe } from "./components/Universe";
+import { LiveSignals } from "./components/LiveSignals";
 import { Screenshots } from "./components/Screenshots";
 import { TechStack } from "./components/TechStack";
+import { PrivacyNotice } from "./components/PrivacyNotice";
 import { Footer } from "./components/Footer";
 
 export default function App() {
@@ -20,8 +22,10 @@ export default function App() {
         <HowItWorks />
         <Research />
         <Universe />
+        <LiveSignals />
         <Screenshots />
         <TechStack />
+        <PrivacyNotice />
       </main>
       <Footer />
     </>

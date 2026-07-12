@@ -14,6 +14,7 @@ export function Nav() {
     { href: "#how", label: s.nav.how },
     { href: "#research", label: s.nav.research },
     { href: "#universe", label: s.nav.universe },
+    { href: "#signals", label: s.nav.signals },
     { href: "#screenshots", label: s.nav.screenshots },
     { href: "#tech", label: s.nav.tech },
   ];
@@ -40,15 +41,23 @@ export function Nav() {
         <Logo />
 
         <nav className="hidden items-center gap-6 text-sm text-muted md:flex">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="transition-colors hover:text-ink-text"
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) => {
+            const live = l.href === "#signals";
+            return (
+              <a
+                key={l.href}
+                href={l.href}
+                className={`inline-flex items-center gap-1.5 transition-colors ${
+                  live ? "text-neon" : "hover:text-ink-text"
+                }`}
+              >
+                {live && (
+                  <span className="dot-pulse h-1.5 w-1.5 rounded-full bg-neon" />
+                )}
+                {l.label}
+              </a>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-3">
@@ -81,16 +90,24 @@ export function Nav() {
           className="border-t border-line bg-ink md:hidden"
         >
           <div className="mx-auto flex max-w-6xl flex-col px-5 py-1 sm:px-8">
-            {links.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={() => setOpen(false)}
-                className="border-b border-line/50 py-3 text-sm text-ink-text transition-colors hover:text-neon"
-              >
-                {l.label}
-              </a>
-            ))}
+            {links.map((l) => {
+              const live = l.href === "#signals";
+              return (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  onClick={() => setOpen(false)}
+                  className={`flex items-center gap-2 border-b border-line/50 py-3 text-sm transition-colors hover:text-neon ${
+                    live ? "text-neon" : "text-ink-text"
+                  }`}
+                >
+                  {live && (
+                    <span className="dot-pulse h-1.5 w-1.5 rounded-full bg-neon" />
+                  )}
+                  {l.label}
+                </a>
+              );
+            })}
             <a
               href={LINKS.repo}
               target="_blank"

@@ -1,7 +1,7 @@
 export const LINKS = {
   repo: "https://github.com/pavlenchichikov/Atratus",
   github: "https://github.com/pavlenchichikov",
-  email: "p.galashin@proton.me",
+  email: "sammolet@yahoo.com",
 };
 
 // Public assets are referenced through BASE_URL so the relative-base build works

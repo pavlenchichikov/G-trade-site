@@ -40,6 +40,7 @@ export interface Strings {
     how: string;
     research: string;
     universe: string;
+    signals: string;
     screenshots: string;
     tech: string;
     github: string;
@@ -104,5 +105,39 @@ export interface Strings {
     repo: string;
     contact: string;
     builtWith: string;
+  };
+  signals: {
+    kicker: string;
+    heading: string;
+    sub: string;
+    asOf: string;
+    buy: string;
+    sell: string;
+    wait: string;
+    accuracy: string;
+    breadth: string;
+    signInCta: string;
+    emailPlaceholder: string;
+    consent: string;
+    privacyLink: string;
+    send: string;
+    sending: string;
+    linkSent: string;
+    signedInAs: string;
+    signOut: string;
+    pending: string;
+    colAsset: string;
+    colAction: string;
+    colProb: string;
+    colMode: string;
+    colTaleb: string;
+    colAcc: string;
+    empty: string;
+    notConfigured: string;
+    disclaimer: string;
+  };
+  privacy: {
+    heading: string;
+    body: string;
   };
 }
